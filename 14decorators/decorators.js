@@ -1,4 +1,4 @@
-/* 
+/*
 //@component
 //@selector
 //@useState("dasda")
@@ -29,22 +29,20 @@ function setAPIVersion(apiVersion:string){
     return(constructor: any)=>{
    return class extends constructor {
     version= apiVersion
-   } 
+   }
 }}
 //decorator-acotar a versao da api
 @setAPIVersion("1.0.0")
 class API{}
-console.log(new API()); 
+console.log(new API());
 */
-
-                       //property decorator
-
+//property decorator
 /* function minLenght(length:number){
     return(target:any,key:string)=>{
         console.log(target);
         console.log(key);
     };
-}    
+}
 
 function minLength(length:number){
     return(target:any,key:string)=>{
@@ -58,7 +56,7 @@ function minLength(length:number){
         }
 
         };
-    Object.defineProperty(target,key,{get:getter,set:setter}) 
+    Object.defineProperty(target,key,{get:getter,set:setter})
     };
 }
 class Movie{
@@ -109,4 +107,4 @@ pessoinha.greet();
 //parameter decorator
 //acessor  decorator
 
-*/
+*/ 
